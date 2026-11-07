@@ -169,9 +169,9 @@ const firebaseConfig = {
     
     const text = cart.map(i => `• ${i.title} (R$ ${i.price.toFixed(2)})`).join('\n');
     const total = cart.reduce((acc, item) => acc + item.price, 0);
-    const msg = encodeURIComponent(`*Novo Pedido - Castro Personalizados:*\n\n${text}\n\n*Total:* R$ ${total.toFixed(2)}`);
+    const msg = encodeURIComponent(`*Novo Pedido - Panificadora Alvorada:*\n\n${text}\n\n*Total:* R$ ${total.toFixed(2)}`);
     
     // Substitua abaixo pelo seu número de WhatsApp com DDI e DDD (Ex: 5561999999999)
-    const phone = "5561999999999"; 
+    const phone = "5561993989639"; 
     window.open(`https://wa.me/${phone}?text=${msg}`, '_blank');
   };
